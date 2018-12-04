@@ -13,7 +13,7 @@
 
     <aop:config>
         <aop:aspect ref="aspect">
-            <aop:pointcut id="inService" expression="execution(* org.dracula.techshare2..*(..))" />
+            <aop:pointcut id="inService" expression="execution(* org.dracula.techshare2.TestService.actualLogic(..))" />
             <aop:before method="someBefore" pointcut-ref="inService" />
         </aop:aspect>
     </aop:config>

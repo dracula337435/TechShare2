@@ -14,10 +14,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AspectTest {
 
     @Autowired
-    TestServiceImpl testService;
+    TestService testService;
 
     @Test
     public void test(){
+        System.out.println(testService.withoutAspect());
         System.out.println(testService.actualLogic());
     }
 

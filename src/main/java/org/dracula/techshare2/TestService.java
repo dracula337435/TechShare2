@@ -9,6 +9,12 @@ public interface TestService {
      *
      * @return
      */
+    String withoutAspect();
+
+    /**
+     *
+     * @return
+     */
     String actualLogic();
 
 }
