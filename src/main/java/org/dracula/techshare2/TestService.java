@@ -7,9 +7,10 @@ public interface TestService {
 
     /**
      *
+     * @param withAspect
      * @return
      */
-    String withoutAspect();
+    String whetherWithAspect(boolean withAspect);
 
     /**
      *

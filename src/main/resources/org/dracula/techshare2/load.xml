@@ -11,7 +11,7 @@
 
     <bean id="aspect" class="org.dracula.techshare2.TestAspect" />
 
-    <aop:config>
+    <aop:config proxy-target-class="false" expose-proxy="true">
         <aop:aspect ref="aspect">
             <aop:pointcut id="inService" expression="execution(* org.dracula.techshare2.TestService.actualLogic(..))" />
             <aop:before method="someBefore" pointcut-ref="inService" />
