@@ -18,4 +18,13 @@
         </aop:aspect>
     </aop:config>
 
+    <bean id="anno-aspect" class="org.dracula.techshare2.annotation.AnnotationedAspect" />
+
+    <aop:config>
+        <aop:aspect ref="anno-aspect">
+            <aop:pointcut id="annotationed" expression="@annotation(annotationed)" />
+            <aop:before method="before" pointcut-ref="annotationed" />
+        </aop:aspect>
+    </aop:config>
+
 </beans>

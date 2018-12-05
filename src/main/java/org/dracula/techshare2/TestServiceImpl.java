@@ -1,5 +1,6 @@
 package org.dracula.techshare2;
 
+import org.dracula.techshare2.annotation.Annotationed;
 import org.springframework.aop.framework.AopContext;
 
 /**
@@ -19,6 +20,7 @@ public class TestServiceImpl implements TestService {
         return "without aspect";
     }
 
+    @Annotationed("hello by annotation")
     @Override
     public String actualLogic() {
         return "hello gxk";

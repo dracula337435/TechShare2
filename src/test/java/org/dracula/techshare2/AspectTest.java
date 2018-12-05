@@ -22,7 +22,7 @@ public class AspectTest {
         System.out.println(testService.actualLogic());
         System.out.println("然后说明whetherWithAspect(...)自身没有切面，而且actualLogic()切面“失效”");
         System.out.println(testService.whetherWithAspect(false));
-        System.out.println("已经说明whetherWithAspect(...)自身没有切面，actualLogic()确有切面");
+        System.out.println("已经说明whetherWithAspect(...)自身没有切面，用了手段后actualLogic()确有切面");
         System.out.println(testService.whetherWithAspect(true));
     }
 
